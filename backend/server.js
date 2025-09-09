@@ -38,6 +38,9 @@ app.get('/api/test-db', async (req, res) => {
 });
 const authRoutes = require('./routes/auth');
 app.use('/api/auth', authRoutes);
+const roomRoutes = require('./routes/rooms');
+app.use('/api/rooms', roomRoutes);
+
 
 // Catch-all for unmatched routes (404)
 app.use((req, res) => {
