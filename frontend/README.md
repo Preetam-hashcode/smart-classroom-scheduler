@@ -119,7 +119,7 @@ This project is licensed under the MIT License. See [LICENSE](LICENSE) for detai
 
 ## Contact
 
-**Your Name** – your.email@example.com  
+**Your Name** – ghoshdebrupa005@gmail.com 
 Project Link: [https://github.com/Preetam-hashcode/smart-classroom-scheduler]
 
 ---
