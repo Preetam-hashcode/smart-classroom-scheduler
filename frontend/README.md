@@ -35,7 +35,7 @@ A **modern, role-based web application** that enables students and teachers to v
 
 1. **Clone the repository**
 
-git clone https://github.com/yourusername/classroom-booking-system.git
+git clone https://github.com/Preetam-hashcode/smart-classroom-scheduler
 cd classroom-booking-system
 
 text
@@ -66,7 +66,7 @@ yarn start
 
 text
 
-4. **Open [http://localhost:3000](http://localhost:3000) in your browser**
+4. **Open [http://localhost:5173/]   in your browser**
 
 ---
 
@@ -120,7 +120,7 @@ This project is licensed under the MIT License. See [LICENSE](LICENSE) for detai
 ## Contact
 
 **Your Name** – your.email@example.com  
-Project Link: [https://github.com/yourusername/classroom-booking-system](https://github.com/yourusername/classroom-booking-system)
+Project Link: [https://github.com/Preetam-hashcode/smart-classroom-scheduler]
 
 ---
 
