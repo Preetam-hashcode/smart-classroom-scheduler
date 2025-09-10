@@ -314,13 +314,14 @@ body, html, #root {
 
 /* MODAL */
 .modal {
-  background: white;
-  border-radius: 15px;
-  box-shadow: 0 0 30px rgba(0,0,0,0.3);
-  padding: 30px;
-  text-align: center;
-  max-width: 360px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 8px 25px;
+  max-width: 200px; /* Reduce max width */
   width: 90%;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  font-size: 14px; /* Slightly smaller font size */
+  text-align: center;
 }
 
 .modal h2 {
