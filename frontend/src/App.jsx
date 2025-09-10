@@ -286,29 +286,6 @@ export default function App() {
     setAction("");
   };
 
-  if (!user) {
-    return (
-      <div className="login-container">
-        <form
-          className="login-form"
-          onSubmit={(e) => {
-            e.preventDefault();
-            const username = e.target.username.value.trim();
-            const role = e.target.role.value;
-            if (username) setUser({ username, role });
-          }}
-        >
-          <h2>Smart Classroom Booking</h2>
-          <input name="username" placeholder="Enter your name" required />
-          <select name="role" defaultValue="student">
-            <option value="student">Student</option>
-            <option value="teacher">Teacher</option>
-          </select>
-          <button type="submit">Login</button>
-        </form>
-      </div>
-    );
-  }
 
   const filteredByBuilding = buildingFilter === "all"
     ? rooms
