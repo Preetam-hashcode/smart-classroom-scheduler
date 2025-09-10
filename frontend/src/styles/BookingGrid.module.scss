@@ -1,0 +1,74 @@
+.room-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(85px, 1fr));
+  gap: 32px;
+  max-width: 600px;
+  margin: 3rem auto 0 auto;
+  justify-items: center;
+}
+.room-box {
+  width: 80px;
+  height: 80px;
+  border-radius: 12px;
+  font-size: 1.18rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #222;
+  box-shadow: 0 4px 12px #4fc3ff23;
+  border: 3px solid transparent;
+  cursor: pointer;
+  background: #fff;
+  transition: transform 0.18s, box-shadow 0.19s, border-color 0.19s;
+  position: relative;
+}
+
+.room-box.available {
+  background: #43ed74;
+  border-color: #219c40;
+  color: #fff;
+}
+.room-box.booked {
+  background: #fa6868;
+  border-color: #e21212;
+  color: #fff;
+}
+.room-box.soon {
+  background: #fff568;
+  border-color: #c4ad10;
+  color: #222;
+}
+
+.room-box:hover, .room-box:focus {
+  transform: scale(1.11) translateY(-4px);
+  box-shadow: 0 12px 26px #4fc3ff40;
+  z-index: 2;
+}
+.room-label {
+  text-shadow: 0 1px 2px #4445;
+}
+
+.room-popover {
+  position: absolute;
+  left: 50%;
+  top: -74px;
+  transform: translateX(-50%);
+  pointer-events: none;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 8px 24px #217adc42;
+  min-width: 110px;
+  color: #1c2c45;
+  border: 1.5px solid #39baff;
+  padding: 10px 13px;
+  font-size: 0.98em;
+  white-space: pre-line;
+  text-align: center;
+  font-weight: 600;
+  animation: fadeIn .18s ease;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateX(-50%) translateY(10px);}
+  to { opacity: 1; transform: translateX(-50%) translateY(0);}
+}

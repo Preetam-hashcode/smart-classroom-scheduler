@@ -1,0 +1,56 @@
+.seat {
+  width: 62px;
+  height: 52px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 0.95rem;
+  border:3px solid transparent;
+  transition: all 0.21s;
+  background: #fff;
+  color: #333;
+  position: relative;
+}
+
+.seat.available { background: #45e174; border-color: #219c40; color: #fff;}
+.seat.booked { background: #f76363; border-color: #d11d23; color: #fff;}
+.seat.soon { background: #ffd44e; border-color: #d4ae00; color: #333;}
+
+.seat.clickable:hover, .seat.available:hover {
+  box-shadow: 0 8px 18px #4fc3ff40;
+  transform: scale(1.09) translateY(-2px);
+  z-index: 6;
+}
+.seat-label { text-shadow: 0 1px 2px #245; }
+
+.seat-tooltip {
+  position: absolute;
+  top: -95px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  border-radius: 12px;
+  padding: 0.8em 1.1em;
+  box-shadow: 0 5px 20px #4fc3ff92;
+  color: #26324b;
+  text-align: center;
+  min-width: 122px;
+  border: 1.5px solid #a4ccf2;
+  pointer-events: none;
+  z-index: 10;
+}
+.seat-book-btn {
+  margin-top: 10px;
+  background: #1fa8f2;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 7px 12px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background .2s;
+  pointer-events: all;
+}
+.seat-book-btn:hover { background: #075199; }
